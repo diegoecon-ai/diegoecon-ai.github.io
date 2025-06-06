@@ -10,32 +10,47 @@
 <body class="bg-light text-dark">
 
   <!-- Navbar with full navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4 sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Diego Rojas Diaz</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#articles">Articles/Posts</a></li>
-          <li class="nav-item"><a class="nav-link" href="#resume">Resume - CV</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5 sticky-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+    <!-- Parte izquierda: nombre y título -->
+    <a class="navbar-brand d-flex flex-column" href="#">
+      <h1 class="mb-0">Diego Rojas Diaz</h1>
+      <small>Data Engineer & Software Developer</small>
+    </a>
+
+    <!-- Botón del menú para pantallas pequeñas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú de navegación -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#articles">Articles/Posts</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#resume">Resume - CV</a></li>
+      </ul>
     </div>
-  </nav>
+
+    <!-- Logo a la derecha -->
+    <div class="d-none d-lg-block">
+      <img src="logo.jpeg" alt="Logo" style="height: 90px;" />
+    </div>
+
+  </div>
+</nav>
 
   <div class="container">
     
     <section id="about" class="mb-5">
       <h2 class="text-primary">About</h2>
       <p>
-        Results-driven data engineer and software developer with over 4 years of experience...
+        Results-driven data engineer and software developer with over 4 years of experience. Passionate about building robust data pipelines and scalable architectures using cloud platforms (AWS, Azure) and modern data tools. Strong communicator with a keen interest in quantitative modeling, algorithms, and business impact.
       </p>
     </section>
 
@@ -64,8 +79,24 @@
     <section id="experience" class="mb-5">
       <h2 class="text-primary">Professional Experience</h2>
       <ul>
-        <li><strong>Itau Bank (2022–2023):</strong> Assistant Manager in Data Engineering...</li>
-        <li><strong>Exsis Digital Angels (2021–2022):</strong> Consultant...</li>
+        <li>
+          <div><h4>Assistant Manager - Data Engineering (2022–2023)</h4></div>
+          <style>
+  .bg-orange {
+    background-color: #FF8000 !important;
+  }
+</style>
+          <div class="d-inline-block border p-2 rounded bg-orange"><strong><a href="https://banco.itau.co/" target="_blank" class="text-decoration-none"><h5 style="color: white; background-color: #FF8000;">Itau Bank</h5></a></strong>
+          </div><p>Tasks performed:
+<ul>
+  <li>Lead the data engineering front focused on providing data to feed churn-focused and customer loyalty ML initiatives.</li>
+  <li>Support the migration of data coming from on premises to data lake, ensuring data quality, data governance reducing costs and improving performance.</li>
+  <li>Designing ETLs pipelines to transform semi structured to structured data using Spark SQL within suite of AWS and Azure services. </li>
+  <li>Active role with corporate areas to integrate all bank information sources into a centralized data lake and multiple DWH according to the business areas needs enabling faster the assignment and approval of financial products for companies and potential customers</li>
+</ul>	
+</p></li>
+        <li><strong>Exsis Digital Angels (2021–2022):</strong>Consultant – Regional data integration from claims systems.</li>
+        <li><strong>Teleperformance (2020-2021):</strong>Reporting Analyst and Data Expert – ETL, KPIs, reporting.</li>
         <!-- ... -->
       </ul>
     </section>
